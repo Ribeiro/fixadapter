@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+ <!-- Create a publisher bean that uses ApplicationContextAware bean -->
+ <bean id="context-aware-publisher" class="br.com.gigio.fixadapter.publishers.ApplicationContextAwarePublisher"/>
+ 
+ <!-- Create a publisher bean that uses ApplicationEventPublisherAware bean -->
+ <bean id="event-publisher-aware-publisher" class="br.com.gigio.fixadapter.publishers.ApplicationEventAwarePublisher"/>
+ 
+ <!-- Create the listener --> 
+ <bean id="messageEventListener" class="br.com.gigio.fixadapter.listeners.MessageEventListener"/>
+</beans>
