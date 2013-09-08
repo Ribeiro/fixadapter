@@ -1,0 +1,4 @@
+fixadapter
+==========
+
+FixAdapter Observer Kickstart
